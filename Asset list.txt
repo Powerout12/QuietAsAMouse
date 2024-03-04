@@ -1,0 +1,12 @@
+Shelf
+	https://assetstore.unity.com/packages/3d/props/furniture/ds-furniture-pack-01-121404
+Toys
+	https://assetstore.unity.com/packages/3d/props/interior/low-poly-wooden-kid-s-toys-162585
+Cars
+	https://assetstore.unity.com/packages/3d/vehicles/land/tiny-low-poly-cars-180034
+Books
+	https://assetstore.unity.com/packages/3d/props/interior/simple-books-pack-116242
+Environment textures
+	https://assetstore.unity.com/packages/2d/textures-materials/brick/high-quality-bricks-walls-49581
+LightBulb
+	https://assetstore.unity.com/packages/3d/props/interior/lightbulb-218258

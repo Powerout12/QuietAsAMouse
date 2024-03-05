@@ -10,3 +10,7 @@ Environment textures
 	https://assetstore.unity.com/packages/2d/textures-materials/brick/high-quality-bricks-walls-49581
 LightBulb
 	https://assetstore.unity.com/packages/3d/props/interior/lightbulb-218258
+Lamp Particle Effect
+	https://assetstore.unity.com/packages/audio/sound-fx/foley/fantasy-sfx-for-particle-distort-texture-effect-library-42146
+Ghost Particle Effect
+	https://assetstore.unity.com/packages/vfx/particles/spells/magic-effects-free-247933

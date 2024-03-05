@@ -4,52 +4,31 @@ using UnityEngine;
 
 public class RemoteController : MonoBehaviour
 {
-    public GameObject fan; // Reference to the fan GameObject
-    public Light winLight; // Reference to the light component for the win condition
-    public AudioClip fanActivationSound; // Sound to play when the fan is activated
-    public AudioClip winSound; // Sound to play when the win condition is triggered
-
-    private Animator fanAnimator;
-    private bool isFanActivated = false;
-
-    private void Start()
-    {
-        fanAnimator = fan.GetComponent<Animator>();
-    }
+    public GameObject enemyToDisappear;
+    public GameObject wallToDespawn;
+    public Light lightToTurnOn;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Remote"))
+        if (other.CompareTag("Player"))
         {
-            ActivateFan();
-            TurnOnWinLight();
-            TriggerWinCondition();
-            Destroy(other.gameObject);
+            // Disable the enemy object
+            if (enemyToDisappear != null)
+            {
+                enemyToDisappear.SetActive(false);
+            }
+
+            // Despawn the wall
+            if (wallToDespawn != null)
+            {
+                Destroy(wallToDespawn);
+            }
+
+            // Turn on the light
+            if (lightToTurnOn != null)
+            {
+                lightToTurnOn.enabled = true;
+            }
         }
-    }
-
-    private void ActivateFan()
-    {
-        if (!isFanActivated)
-        {
-            isFanActivated = true;
-            // Play animation
-            fanAnimator.SetTrigger("Activate");
-            // Play sound
-            AudioSource.PlayClipAtPoint(fanActivationSound, fan.transform.position);
-        }
-    }
-
-    private void TurnOnWinLight()
-    {
-        winLight.enabled = true;
-    }
-
-    private void TriggerWinCondition()
-    {
-        Debug.Log("You win!");
-        // Implement your win condition logic here, such as showing a win screen
-        // Play win sound
-        AudioSource.PlayClipAtPoint(winSound, transform.position);
     }
 }

@@ -14,3 +14,7 @@ Lamp Particle Effect
 	https://assetstore.unity.com/packages/audio/sound-fx/foley/fantasy-sfx-for-particle-distort-texture-effect-library-42146
 Ghost Particle Effect
 	https://assetstore.unity.com/packages/vfx/particles/spells/magic-effects-free-247933
+Walking Sound
+	https://www.zapsplat.com/music/boys-sneaker-single-footstep-on-wood-3/
+Music
+	https://www.chosic.com/download-audio/27974/
